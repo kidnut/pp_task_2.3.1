@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<head>
+    <style>
+        a {
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 15px 25px;
+            padding: 15px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.4s ease-in-out;
+        }
+
+        /*кнопка 10*/
+        .ten a {
+            color: #E7E5DD;
+            border-radius: 150px;
+            border: 30px solid #E7E5DD;
+        }
+
+        .ten a:hover {
+            color: #BDB9AB;
+            background: #E7E5DD;
+        }
+
+        .ten a span {
+            opacity: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        .ten a:hover span {
+            opacity: 1;
+            padding-left: 100px;
+            padding-right: 100px;
+            color: #BDB9AB;
+        }
+
+        .center-flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <meta charset="UTF-8"/>
+</head>
+
+<body>
+
+<div class="container">
+    <section>
+        <br><br><br><br><br>
+        <div class="center-flexbox">
+            <p class="ten"><a href="/hello"><span>&#8594;</span>Page Hello<span>&#8592;</span></a></p>
+        </div>
+        <br><br><br><br><br>
+        <div class="center-flexbox">
+            <p class="ten"><a href="/cars"><span>&#8594;</span>Page Cars<span>&#8592;</span></a></p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
