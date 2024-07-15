@@ -6,8 +6,9 @@ import java.util.List;
 
 public interface UserDao {
     void add(User user);
+    List<User> getUsers();
+    User getUser(int id);
+    void update(User user);
+    void removeUserById(int id);
 
-    List<User> listUsers();
-
-//    List<User> getCarUser(String model, int series);
 }
